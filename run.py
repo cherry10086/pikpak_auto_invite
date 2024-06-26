@@ -541,8 +541,8 @@ async def init2(xid, access_token, sub, sign, t):
         'x-platform-version': '1',
         'x-protocol-version': '301',
         'x-provider-name': 'NONE',
-        
         'x-sdk-version': '6.0.0'
+        
     }
     async with aiohttp.ClientSession() as session:
         async with session.post(url, json=body, headers=headers, ssl=False, proxy=PROXY) as response:
